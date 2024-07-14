@@ -48,7 +48,7 @@ install_paketes() {
   clear && clear
   ### PAQUETES PRINCIPALES
   msg -bar2
-  msg -ama "  [ SCRIPT-FREE  \033[1;97m ❌ MOD By @Kalix1 ❌\033[1;33m ]"
+  msg -ama "  [ SCRIPT-FREE  \033[1;97m ❌ MOD By @El NeNe ❌\033[1;33m ]"
   msg -bar
   echo -e "\033[97m"
   echo -e "  \033[41m    -- INSTALACION DE PAQUETES PARA VPS-MX --    \e[49m"
@@ -166,7 +166,7 @@ install_paketes() {
 install_paketes
 mkdir /etc/VPS-MX >/dev/null 2>&1
 cd /etc/
-wget https://github.com/eze1087/vps-mx-8.4G/raw/f20d9d9b98dbaa21c6d4b848e22edeec10eb1eb6/SCRIPT-v8.4g%20Oficial/VPS-MX.tar.xz >/dev/null 2>&1
+wget https://github.com/eze1087/vps-mx-8.4G/raw/vps-mx-8.4g/SCRIPT-v8.4g%20Oficial/VPS-MX.tar.xz >/dev/null 2>&1
 tar -xf VPS-MX.tar.xz >/dev/null 2>&1
 chmod +x VPS-MX.tar.xz >/dev/null 2>&1
 rm -rf VPS-MX.tar.xz
@@ -203,10 +203,10 @@ msg -ama "               Finalizando Instalacion" && msg bar2
 touch /usr/share/lognull &>/dev/null
 wget -O /bin/resetsshdrop https://github.com/eze1087/vps-mx-8.4G/raw/vps-mx-8.4g/LINKS-LIBRERIAS/resetsshdrop &>/dev/null
 chmod +x /bin/resetsshdrop
-wget -O /etc/versin_script_new https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/Version &>/dev/null
+wget -O /etc/versin_script_new https://raw.githubusercontent.com/eze1087/vps-mx-8.4G/vps-mx-8.4g/Version &>/dev/null
 grep -v "^PasswordAuthentication" /etc/ssh/sshd_config >/tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
 echo "PasswordAuthentication yes" >>/etc/ssh/sshd_config
-v1=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/Version") 
+v1=$(curl -sSL "https://raw.githubusercontent.com/eze1087/vps-mx-8.4G/vps-mx-8.4g/Version") 
 echo "$v1" > /etc/versin_script 
 msg -bar2
 echo '#!/bin/sh -e' >/etc/rc.local

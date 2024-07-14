@@ -191,7 +191,7 @@ echo "/etc/VPS-MX/menu" >/usr/bin/VPSMX && chmod +x /usr/bin/VPSMX
 rm -rf /etc/VPS-MX/herramientas/speed.sh
 rm -rf /etc/VPS-MX/herramientas/speedtest.py
 #
-wget https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/LINKS-LIBRERIAS/speedtest_v1.tar >/dev/null 2>&1
+wget https://github.com/eze1087/vps-mx-8.4G/raw/vps-mx-8.4g/LINKS-LIBRERIAS/speedtest_v1.tar >/dev/null 2>&1
 tar -xf speedtest_v1.tar >/dev/null 2>&1
 rm -rf speedtest_v1.tar >/dev/null 2>&1
 cd
@@ -201,7 +201,7 @@ cd
 [[ ! -d /etc/VPS-MX/Slow/Key ]] && mkdir /etc/VPS-MX/Slow/Key
 msg -ama "               Finalizando Instalacion" && msg bar2
 touch /usr/share/lognull &>/dev/null
-wget -O /bin/resetsshdrop https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/LINKS-LIBRERIAS/resetsshdrop &>/dev/null
+wget -O /bin/resetsshdrop https://github.com/eze1087/vps-mx-8.4G/raw/vps-mx-8.4g/LINKS-LIBRERIAS/resetsshdrop &>/dev/null
 chmod +x /bin/resetsshdrop
 wget -O /etc/versin_script_new https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/Version &>/dev/null
 grep -v "^PasswordAuthentication" /etc/ssh/sshd_config >/tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config

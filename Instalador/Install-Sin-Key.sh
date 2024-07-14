@@ -166,7 +166,7 @@ install_paketes() {
 install_paketes
 mkdir /etc/VPS-MX >/dev/null 2>&1
 cd /etc/
-wget https://raw.githubusercontent.com/NetVPS/VPS-MX_Oficial/master/SCRIPT-v8.4g%20Oficial/VPS-MX.tar.xz >/dev/null 2>&1
+wget https://github.com/eze1087/vps-mx-8.4G/raw/f20d9d9b98dbaa21c6d4b848e22edeec10eb1eb6/SCRIPT-v8.4g%20Oficial/VPS-MX.tar.xz >/dev/null 2>&1
 tar -xf VPS-MX.tar.xz >/dev/null 2>&1
 chmod +x VPS-MX.tar.xz >/dev/null 2>&1
 rm -rf VPS-MX.tar.xz
